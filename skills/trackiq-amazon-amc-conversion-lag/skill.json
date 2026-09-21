@@ -1,0 +1,35 @@
+{
+  "name": "trackiq-amazon-amc-conversion-lag",
+  "title": "TrackIQ: Amazon AMC Conversion Lag & Attribution Window",
+  "category": "amc",
+  "version": "1.0.0",
+  "updated": "2026-09-21",
+  "summary": "Reads Amazon Marketing Cloud's time-to-conversion data to show how long shoppers take between their first ad touch and purchase \u2014 the share that buys within the hour, the day and the week, and how that shifts month to month \u2014 then turns it into two decisions: which attribution window to report on, and how many days ahead of a sales event to start upper-funnel spend.",
+  "changelog": "First public release.",
+  "requires": {
+    "mcp": [
+      "trackiq"
+    ],
+    "tools": [
+      "list_marketplaces",
+      "get_amc_time_to_conversion",
+      "get_campaigns"
+    ],
+    "filesystem": false,
+    "network": false,
+    "third_party_apis": []
+  },
+  "delivery": {
+    "methods": [
+      "in-chat",
+      "file",
+      "slack",
+      "n8n",
+      "email"
+    ],
+    "default": "in-chat",
+    "note": "in-chat always works and is the fallback. Outward sends confirm first."
+  },
+  "homepage": "https://trackiq.com/skills/trackiq-amazon-amc-conversion-lag",
+  "license": "MIT"
+}

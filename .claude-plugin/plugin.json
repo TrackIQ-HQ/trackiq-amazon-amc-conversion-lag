@@ -1,0 +1,22 @@
+{
+  "name": "trackiq-amazon-amc-conversion-lag",
+  "version": "1.0.0",
+  "description": "TrackIQ: Amazon AMC Conversion Lag & Attribution Window \u2014 an Agent Skill for Amazon sellers, built on TrackIQ MCP data.",
+  "author": {
+    "name": "TrackIQ",
+    "url": "https://trackiq.com"
+  },
+  "homepage": "https://trackiq.com/skills/trackiq-amazon-amc-conversion-lag",
+  "repository": "https://github.com/TrackIQ-HQ/trackiq-amazon-amc-conversion-lag",
+  "license": "MIT",
+  "keywords": [
+    "amazon",
+    "amazon-seller",
+    "claude-skill",
+    "agent-skills",
+    "mcp",
+    "trackiq",
+    "amazon-marketing-cloud",
+    "amazon-dsp"
+  ]
+}
