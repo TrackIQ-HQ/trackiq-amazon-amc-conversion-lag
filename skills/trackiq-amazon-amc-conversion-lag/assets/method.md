@@ -32,8 +32,11 @@ The share that buys within a day is impulse; the week bucket is
 consideration. For a sales event:
 
 ```
-lead_days = 7 if after_week >= 20% else (5 if within_day < 60% else 2)
+lead_days = 7 if after_week >= 20% else (5 if after_week >= 10% or within_day < 60% else 2)
 ```
+
+The middle band follows the attribution table above: once a tenth of
+purchases land after a week, two days is too short a run-up.
 
 Recommend starting upper-funnel (DSP, Sponsored Display, Sponsored Brands
 video) `lead_days` before the event, and say it rests on the open-ended
@@ -41,7 +44,7 @@ video) `lead_days` before the event, and say it rests on the open-ended
 
 ## 4. Volume by channel
 
-From `group_by='campaign'`, sum purchases by `campaign_type` for the focus
+From `group_by='campaign'`, sum `total_brand_purchases` by `campaign_type` for the focus
 month and show each channel's share of attributed purchases. Context only —
 it does not rank campaigns by speed.
 

@@ -1,6 +1,6 @@
 {
   "name": "trackiq-amazon-amc-conversion-lag",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "TrackIQ: Amazon AMC Conversion Lag & Attribution Window \u2014 an Agent Skill for Amazon sellers, built on TrackIQ MCP data.",
   "author": {
     "name": "TrackIQ",
